@@ -129,27 +129,13 @@ private fun PerformanceContent(
             }
         }
 
-        Spacer(modifier = Modifier.height(12.dp))
+        if (ramPlusSupported) {
+            Spacer(modifier = Modifier.height(12.dp))
 
-        Row(
-            modifier = Modifier.fillMaxWidth().height(IntrinsicSize.Max),
-            horizontalArrangement = Arrangement.spacedBy(12.dp),
-        ) {
-            FeatureCard(
-                title = stringResource(R.string.kernel_manager),
-                summary = stringResource(R.string.kernel_manager_summary),
-                onClick = onKernelManagerClick,
-                modifier = Modifier.weight(1f),
-                illustrationColor = MaterialTheme.colorScheme.tertiaryContainer,
+            Row(
+                modifier = Modifier.fillMaxWidth().height(IntrinsicSize.Max),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
             ) {
-                Icon(
-                    imageVector = icons.Sensors,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.onTertiaryContainer,
-                    modifier = Modifier.size(36.dp),
-                )
-            }
-            if (ramPlusSupported) {
                 FeatureCard(
                     title = stringResource(R.string.ram_plus),
                     summary = stringResource(R.string.ram_plus_summary),
@@ -164,7 +150,6 @@ private fun PerformanceContent(
                         modifier = Modifier.size(36.dp),
                     )
                 }
-            } else {
                 Spacer(modifier = Modifier.weight(1f))
             }
         }
