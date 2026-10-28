@@ -59,7 +59,6 @@ fun PerformanceScreen(
             PerformanceContent(
                 onAppOptimizationClick = { onNavigateToDetail("app_optimization") },
                 onBackgroundManagerClick = { onNavigateToDetail("background_manager") },
-                onKernelManagerClick = { onNavigateToDetail("kernel_manager") },
                 onRamPlusClick = { onNavigateToDetail("ram_plus") },
                 modifier = Modifier.padding(innerPadding),
             )
@@ -68,7 +67,6 @@ fun PerformanceScreen(
         PerformanceContent(
             onAppOptimizationClick = { onNavigateToDetail("app_optimization") },
             onBackgroundManagerClick = { onNavigateToDetail("background_manager") },
-            onKernelManagerClick = { onNavigateToDetail("kernel_manager") },
             onRamPlusClick = { onNavigateToDetail("ram_plus") },
             modifier = Modifier,
         )
@@ -79,7 +77,6 @@ fun PerformanceScreen(
 private fun PerformanceContent(
     onAppOptimizationClick: () -> Unit,
     onBackgroundManagerClick: () -> Unit,
-    onKernelManagerClick: () -> Unit,
     onRamPlusClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {

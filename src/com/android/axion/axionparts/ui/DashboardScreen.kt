@@ -473,7 +473,6 @@ private fun DetailScreen(
                 onBackClick = onBackClick,
                 onNavigateToAppPicker = onNavigateToManagedAppPicker,
             )
-        "kernel_manager" -> KernelManagerScreen(onBackClick = onBackClick)
         "ram_plus" -> RamPlusScreen(onBackClick = onBackClick)
         "app_optimization" -> AppOptimizationScreen(onBackClick = onBackClick)
         "app_picker" ->
@@ -534,7 +533,6 @@ private fun DetailPaneContent(
                 onBackClick = onClose,
                 onNavigateToAppPicker = onNavigateToManagedAppPicker,
             )
-        "kernel_manager" -> KernelManagerScreen(onBackClick = onClose)
         "ram_plus" -> RamPlusScreen(onBackClick = onClose)
         "app_picker" ->
             ManagedAppPickerScreen(

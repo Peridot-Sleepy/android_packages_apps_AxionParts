@@ -171,13 +171,6 @@ object FeatureRegistry {
             action = "com.android.axion.axionparts.action.DUAL_APPS"
         ),
         PartFeature(
-            key = "kernel_manager_settings",
-            titleRes = R.string.kernel_manager,
-            summaryRes = R.string.kernel_manager_summary,
-            keywordsRes = R.string.keywords_kernel_manager,
-            action = "com.android.axion.axionparts.action.KERNEL_MANAGER"
-        ),
-        PartFeature(
             key = "ram_plus_settings",
             titleRes = R.string.ram_plus,
             summaryRes = R.string.ram_plus_summary,
